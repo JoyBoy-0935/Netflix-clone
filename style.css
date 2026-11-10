@@ -1,0 +1,394 @@
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kanit", sans-serif;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    header {
+        position: relative;
+        height: 70vh;
+
+        width: 100%;
+        background-image: url(Assets/Images/Background.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .overlays {
+        position: absolute;
+        inset: 0;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.77;
+    }
+
+    nav,
+    .hero {
+        position: relative;
+        z-index: 2;
+        padding: 0px 20px;
+    }
+
+    nav {
+        padding-top: 5vh;
+        margin: auto;
+        height: 10vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        height: 40px;
+        width: 148px;
+    }
+
+    .hero {
+        padding-top: 15vh;
+
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        color: white;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .seperation {
+        height: 8px;
+        width: 100%;
+
+        background-color: rgb(60, 60, 60);
+    }
+
+    .red-btn-si {
+        padding: 0% 26px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        height: 29px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
+    .red-btn-gs {
+        padding: 9px 30px;
+        height: 55px;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
+    .t-btn-lang {
+        height: 30px;
+        padding: 0px 20px;
+        border-radius: 4px;
+        font-size: 17px;
+        color: white;
+        background: rgba(25, 25, 25, 0.4);
+    }
+
+    .t-btn-text {
+        height: 55px;
+        padding: 9px 256px 9px 9px;
+
+        border: 1px solid rgb(117, 116, 116);
+        border-radius: 4px;
+        background: rgba(25, 25, 25, 0.4);
+    }
+
+    input {
+        color: white;
+    }
+
+    input[type]::placeholder {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redbutt:hover {
+        background-color: #920606;
+    }
+
+    main .first {
+
+        margin: 10vh auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .first .texts {
+        width: 70vw;
+        color: white;
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    main .first .texts> :nth-child(1) {
+        font-weight: bold;
+        font-size: 55px;
+    }
+
+    main .first .texts> :nth-child(2) {
+        font-size: 25px;
+    }
+
+    .secImg {
+        position: relative;
+    }
+
+    .secImg img {
+        position: relative;
+        width: 500px;
+        z-index: 2;
+    }
+
+    .secImg video {
+        width: 380px;
+        position: absolute;
+        top: 72px;
+        left: 65px;
+        z-index: 1;
+    }
+
+    section h1 {
+        padding: 35px;
+        font-size: 48px;
+        color: white;
+        text-align: center;
+    }
+
+    section .faqbox {
+
+        padding: 25px;
+        margin: 15px auto;
+        width: 70vw;
+        font-size: 24px;
+        color: white;
+        background-color: rgb(43, 43, 43);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        cursor: pointer;
+    }
+
+    section .faqbox:hover {
+        background-color: gray;
+    }
+
+    .footsec {
+        height: 25vh;
+    }
+
+    .endsec {
+        margin-top: 60px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+
+    footer {
+        height: 25vh;
+        width: 85vw;
+        margin: 50px auto;
+    }
+
+    footer div {
+        margin: 20px 0px;
+        color: white;
+    }
+
+    .phnum {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    footer ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer ul li {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    li a {
+        color: white;
+        font-size: 14px;
+    }
+
+
+    /* Media Queries */
+
+
+    @media (max-width: 700px) {
+
+        nav,
+        .hero {
+            padding: 0px 0px;
+        }
+
+        nav {
+            padding-top: 8vh;
+            width: 80vw;
+        }
+
+        nav img {
+            height: 40px;
+            width: 80px;
+        }
+
+        .t-btn-text {
+            height: 35px;
+            padding: 9px 70px 9px 9px;
+        }
+
+
+        input[type]::placeholder {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .red-btn-gs {
+            padding: 9px 0px;
+            height: 35px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        section h1 {
+            font-size: 32px;
+        }
+
+        section .faqbox {
+            width: 80vw;
+            padding: 20px;
+            margin: 12px auto;
+            font-size: 16px;
+        }
+
+        .endsec {
+            font-size: 16px;
+        }
+
+        .t-btn-lang {
+            font-size: 12px;
+        }
+
+        .red-btn-si {
+            padding: 0px 12px;
+            font-size: 12px;
+        }
+
+        .secImg img {
+            width: 360px;
+        }
+
+        .secImg video {
+            width: 260px;
+            top: 55px;
+            left: 50px;
+        }
+    }
+
+
+    @media (max-width: 1000px) {
+
+        .hero> :nth-child(1) {
+            padding-top: 150px;
+            font-size: 32px;
+        }
+
+        .hero> :nth-child(2) {
+            font-size: 16px;
+        }
+
+        .hero> :nth-child(3) {
+            font-size: 12px;
+        }
+
+        main .first .texts {
+            margin: auto;
+        }
+
+        main .first .texts> :nth-child(1) {
+            font-size: 32px;
+        }
+
+        main .first .texts> :nth-child(2) {
+            font-size: 18px;
+        }
+    }
+
+
+    @media (max-width: 1300px) {
+        main .first {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+    }
+
+
+    @media (max-width:700px) {
+        footer ul {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+        }
+    }
